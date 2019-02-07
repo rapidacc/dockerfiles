@@ -6,11 +6,11 @@ ENV NODE_ID=0                     \
     CLOUDSAFE=0                   \
     AUTOEXEC=0                    \
     ANTISSATTACK=0                \
-    MU_SUFFIX=zhaoj.in            \
-    MU_REGEX=%5m%id.%suffix       \
+    MU_SUFFIX=                    \
+    MU_REGEX=microsoft.com        \
     API_INTERFACE=modwebapi       \
-    WEBAPI_URL=https://zhaoj.in   \
-    WEBAPI_TOKEN=glzjin           \
+    WEBAPI_URL=https://myssr.icu  \
+    WEBAPI_TOKEN=rapidacc         \
     MYSQL_HOST=127.0.0.1          \
     MYSQL_PORT=3306               \
     MYSQL_USER=ss                 \
@@ -54,11 +54,11 @@ CMD cp apiconfig.py userapiconfig.py &&                                        c
     sed -i "s|CLOUDSAFE = 1|CLOUDSAFE = ${CLOUDSAFE}|"                         /root/shadowsocks/userapiconfig.py && \
     sed -i "s|AUTOEXEC = 0|AUTOEXEC = ${AUTOEXEC}|"                            /root/shadowsocks/userapiconfig.py && \
     sed -i "s|ANTISSATTACK = 0|ANTISSATTACK = ${ANTISSATTACK}|"                /root/shadowsocks/userapiconfig.py && \
-    sed -i "s|MU_SUFFIX = 'zhaoj.in'|MU_SUFFIX = '${MU_SUFFIX}'|"              /root/shadowsocks/userapiconfig.py && \
-    sed -i "s|MU_REGEX = '%5m%id.%suffix'|MU_REGEX = '${MU_REGEX}'|"           /root/shadowsocks/userapiconfig.py && \
+    sed -i "s|MU_SUFFIX = ''|MU_SUFFIX = '${MU_SUFFIX}'|"              /root/shadowsocks/userapiconfig.py && \
+    sed -i "s|MU_REGEX = 'microsoft.com'|MU_REGEX = '${MU_REGEX}'|"           /root/shadowsocks/userapiconfig.py && \
     sed -i "s|API_INTERFACE = 'modwebapi'|API_INTERFACE = '${API_INTERFACE}'|" /root/shadowsocks/userapiconfig.py && \
-    sed -i "s|WEBAPI_URL = 'https://zhaoj.in'|WEBAPI_URL = '${WEBAPI_URL}'|"   /root/shadowsocks/userapiconfig.py && \
-    sed -i "s|WEBAPI_TOKEN = 'glzjin'|WEBAPI_TOKEN = '${WEBAPI_TOKEN}'|"       /root/shadowsocks/userapiconfig.py && \
+    sed -i "s|WEBAPI_URL = 'https://myssr.icu'|WEBAPI_URL = '${WEBAPI_URL}'|"   /root/shadowsocks/userapiconfig.py && \
+    sed -i "s|WEBAPI_TOKEN = 'rapidacc'|WEBAPI_TOKEN = '${WEBAPI_TOKEN}'|"       /root/shadowsocks/userapiconfig.py && \
     sed -i "s|MYSQL_HOST = '127.0.0.1'|MYSQL_HOST = '${MYSQL_HOST}'|"          /root/shadowsocks/userapiconfig.py && \
     sed -i "s|MYSQL_PORT = 3306|MYSQL_PORT = ${MYSQL_PORT}|"                   /root/shadowsocks/userapiconfig.py && \
     sed -i "s|MYSQL_USER = 'ss'|MYSQL_USER = '${MYSQL_USER}'|"                 /root/shadowsocks/userapiconfig.py && \
